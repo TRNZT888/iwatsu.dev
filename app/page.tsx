@@ -18,7 +18,7 @@ export default function Home() {
       {/* リンクはこれを使う。aタグを使わない */}
       <Link href="https://zenless.hoyoverse.com/en-us/" target="_blank">Zenless Zone</Link>
 
-      <p>At Mozilla, we're a global community of</p>
+      <p>At Mozilla, we are a global community of</p>
 
       <ul>
         <li>technologists</li>
