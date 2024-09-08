@@ -9,6 +9,7 @@ export default function Home() {
       <h3>小見出し</h3>
       <h4>孫見出し</h4>
 
+      <p>変更を加える</p>
       <p>My cat is <strong>very</strong> grumpy.</p>
 
       {/* 画像はこれを使う。imgタグを使わない */}
