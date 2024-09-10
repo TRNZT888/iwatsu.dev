@@ -1,73 +1,111 @@
+import AnimeCard from "@/component/AnimeCard";
 import Image from "next/image";
 import Link from "next/link";
+
+const anime_item: AnimeItem = {
+  "workTitle": "時々ボソッとロシア語でデレる隣のアーリャさん",
+  "workExp": "久世政近の隣の席に座るアーリャさんは、いつも彼に対して冷ややかな目線を向けている。けれど、時々ボソッとロシア語で彼にデレていて……。その言葉を政近も聞き逃しはしない。なんと、政近はロシア語のリスニングがネイティブレベルだったのだ!! 気付いていないと思い込み、時々デレるアーリャさん。そして、その意味を理解しながらも、気付いていないような振りをする政近。ニヤニヤが止まらない、二人の恋模様の行方は——!?",
+  "link": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27198",
+  "mainKeyVisualPath": "https://cs1.animestore.docomo.ne.jp/anime_kv/img/27/19/8/27198_1_1.png?1717985730976",
+  "mainKeyVisualAlt": "時々ボソッとロシア語でデレる隣のアーリャさん_1",
+  "scenes": [
+    {
+      "link": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27198&partId=27198001",
+      "mainScenePath": "https://cs1.animestore.docomo.ne.jp/anime_kv/img/27/19/8/0/01/27198001_1_1.png?1720017005969",
+      "mainSceneAlt": "ロシア語でデレるアーリャさん_1"
+    },
+    {
+      "link": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27198&partId=27198002",
+      "mainScenePath": "https://cs1.animestore.docomo.ne.jp/anime_kv/img/27/19/8/0/02/27198002_1_1.png?1720621806117",
+      "mainSceneAlt": "幼馴染とは？_1"
+    }
+  ],
+  "myListCount": 77269,
+  "favoriteCount": 146341,
+};
+
 
 export default function Home() {
   return (
     <div>
       <h1>メインタイトル</h1>
 
+      <AnimeCard data={anime_item} />
+      <AnimeCard data={anime_item} />
+      <AnimeCard data={anime_item} />
+
       <table>
-        <tr>
-          <td>&nbsp;</td>
-          <td>Knocky</td>
-          <td>Flor</td>
-          <td>Ella</td>
-          <td>Juan</td>
-        </tr>
-        <tr>
-          <td>Breed</td>
-          <td>Jack Russell</td>
-          <td>Poodle</td>
-          <td>Streetdog</td>
-          <td>Cocker Spaniel</td>
-        </tr>
-        <tr>
-          <td>Age</td>
-          <td>16</td>
-          <td>9</td>
-          <td>10</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td>Owner</td>
-          <td>Mother-in-law</td>
-          <td>Me</td>
-          <td>Me</td>
-          <td>Sister-in-law</td>
-        </tr>
-        <tr>
-          <td>Eating Habits</td>
-          <td>Eats everyone's leftovers</td>
-          <td>Nibbles at food</td>
-          <td>Hearty eater</td>
-          <td>Will eat till he explodes</td>
-        </tr>
+        <thead>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Knocky</td>
+            <td>Flor</td>
+            <td>Ella</td>
+            <td>Juan</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Breed</td>
+            <td>Jack Russell</td>
+            <td>Poodle</td>
+            <td>Streetdog</td>
+            <td>Cocker Spaniel</td>
+          </tr>
+          <tr>
+            <td>Age</td>
+            <td>16</td>
+            <td>9</td>
+            <td>10</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Owner</td>
+            <td>Mother-in-law</td>
+            <td>Me</td>
+            <td>Me</td>
+            <td>Sister-in-law</td>
+          </tr>
+          <tr>
+            <td>Eating Habits</td>
+            <td>Eats everyone's leftovers</td>
+            <td>Nibbles at food</td>
+            <td>Hearty eater</td>
+            <td>Will eat till he explodes</td>
+          </tr>
+        </tbody>
       </table>
 
       <table id="table1">
-        <tr>
-          <th>title1</th>
-          <th>title2</th>
-          <th>title3</th>
-        </tr>
-        <tr>
-          <td id="nested">
-            <table id="table2">
-              <tr>
-                <td>cell1</td>
-                <td>cell2</td>
-                <td>cell3</td>
-              </tr>
-            </table>
-          </td>
-          <td>cell2</td>
-          <td>cell3</td>
-        </tr>
-        <tr>
-          <td>cell4</td>
-          <td>cell5</td>
-          <td>cell6</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>title1</th>
+            <th>title2</th>
+            <th>title3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="nested">
+              <table id="table2">
+                <tbody>
+                  <tr>
+                    <td>cell1</td>
+                    <td>cell2</td>
+                    <td>cell3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td>cell2</td>
+            <td>cell3</td>
+          </tr>
+          <tr>
+            <td>cell4</td>
+            <td>cell5</td>
+            <td>cell6</td>
+          </tr>
+        </tbody>
       </table>
 
 
